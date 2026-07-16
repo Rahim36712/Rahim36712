@@ -1,32 +1,32 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=150&section=header&text=Rahim%20Jamil&fontSize=42&fontColor=ffffff&fontAlignY=40&desc=Computer%20Engineering%20%E2%80%94%20AI%2FML%20systems%20that%20don't%20fall%20over&descAlignY=62&descSize=15" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dark/header.svg"/>
+  <img src="assets/header.svg" alt="Rahim Jamil" width="100%"/>
+</picture>
+
+<a href="https://finalportfolio-chi-bay.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/PORTFOLIO-0d1117?style=flat-square&logoColor=ffffff"/><img src="https://img.shields.io/badge/PORTFOLIO-ffffff?style=flat-square&logoColor=000000" alt="Portfolio"/></picture></a>
+<a href="https://www.linkedin.com/in/muhammad-rahim-jamil-39906622b/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LINKEDIN-0d1117?style=flat-square&logo=linkedin&logoColor=ffffff"/><img src="https://img.shields.io/badge/LINKEDIN-ffffff?style=flat-square&logo=linkedin&logoColor=000000" alt="LinkedIn"/></picture></a>
+<a href="mailto:mjamil.ce45ceme@student.nust.edu.pk"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/EMAIL-0d1117?style=flat-square&logo=gmail&logoColor=ffffff"/><img src="https://img.shields.io/badge/EMAIL-ffffff?style=flat-square&logo=gmail&logoColor=000000" alt="Email"/></picture></a>
 
 </div>
-
-I build things that have to work the first time — crisis-response agents that route real rescuers, tumor segmentation that doesn't hallucinate on noisy MRI scans, and embedded firmware where there's no undo button once it ships.
-
-**Currently:**
-- 🔬 Shipping a FastAPI service around a bioinformatics (Wakhan) pipeline
-- 🎓 Finishing Computer Engineering at NUST (CEME), Islamabad — Class of 2026
-- 🌍 Applying to Master's programs abroad, scholarship routes included
-- ⚡ Side project: reverse-engineering forex market structure (ICT / Smart Money concepts)
-
 <br/>
 
-## Stack
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dark/whoami.svg"/>
+  <img src="assets/whoami.svg" alt="01 — whoami" width="100%"/>
+</picture>
+<br/><br/>
 
-| Area | Tools |
-|---|---|
-| **Languages** | Python · C++ · C · Dart · SQL |
-| **AI / ML** | PyTorch · TensorFlow · scikit-learn · OpenCV |
-| **Serving & Ops** | FastAPI · Flask · MLflow · Docker · GitHub Actions |
-| **Data & Viz** | NumPy · Pandas · Streamlit · Plotly |
-| **Automation** | n8n |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dark/systems.svg"/>
+  <img src="assets/systems.svg" alt="02 — systems map" width="100%"/>
+</picture>
 
-<br/>
+<sub>Python · PyTorch · TensorFlow · OpenCV · FastAPI · Flask · MLflow · Docker · GitHub Actions · Streamlit · Plotly · n8n · C++ · C · Dart</sub>
+<br/><br/>
 
-## Featured Projects
+### `03 — BUILDS`
 
 **🚨 [Gaon Guard AI](https://github.com/Rahim36712/gao_ai)**
 11-agent crisis-response system (Google Antigravity hackathon build). Cross-verifies disaster reports across 5 data sources, dispatches teams via Haversine routing, flags aid fraud in real time.
@@ -54,29 +54,21 @@ Self-healing MLOps loop: PSI/KL/Hellinger drift detection triggers champion-vs-c
 
 <br/>
 
-## Activity
+### `04 — TELEMETRY`
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Rahim36712&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rahim36712&layout=compact&theme=tokyonight&hide_border=true"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Rahim36712&show_icons=true&theme=dark&hide_border=true&count_private=true"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Rahim36712&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub stats"/>
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Rahim36712&layout=compact&theme=dark&hide_border=true"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rahim36712&layout=compact&theme=default&hide_border=true" alt="Top languages"/>
+</picture>
 </p>
 
-<br/>
-
-## Connect
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-rahim-jamil-39906622b/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mjamil.ce45ceme@student.nust.edu.pk)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://finalportfolio-chi-bay.vercel.app)
-
-</div>
-
-<br/>
-
 <details>
-<summary><sub>🐍 there's a snake that eats my contribution graph, click to see it</sub></summary>
+<summary><sub>the contribution graph has a snake living in it — click to see it</sub></summary>
 <br/>
 
 <picture>
@@ -86,7 +78,15 @@ Self-healing MLOps loop: PSI/KL/Hellinger drift detection triggers champion-vs-c
 </picture>
 
 </details>
+<br/>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=100&section=footer&reversal=true" width="100%"/>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dark/timeline.svg"/>
+  <img src="assets/timeline.svg" alt="05 — timeline" width="100%"/>
+</picture>
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dark/footer.svg"/>
+  <img src="assets/footer.svg" alt="status" width="100%"/>
+</picture>
