@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="468" viewBox="0 0 480 468" role="img" aria-labelledby="title desc">
+  <title id="title">Muhammad Rahim Jamil</title>
+  <desc id="desc">Python data pipelines, web scraping, SQL databases, and healthcare/genomic data applications. Slow moving points illustrate data flow.</desc>
+  <defs>
+    <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="480" y2="0">
+      <stop offset="0" stop-color="#8BD5C5">
+        <animate attributeName="stop-color" values="#8BD5C5;#D6A17B;#8BD5C5" dur="28s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="1" stop-color="#D6A17B">
+        <animate attributeName="stop-color" values="#D6A17B;#8BD5C5;#D6A17B" dur="28s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+      </stop>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#F5F0E8" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="468" rx="20" fill="#142B32"/>
+  <rect width="480" height="468" rx="20" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="479" height="467" rx="20" fill="none" stroke="#345057"/>
+  <text x="28" y="42" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#8BD5C5" letter-spacing="2">DATA / FIELDNOTES</text>
+  <text x="28" y="89" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#A9BEBC" letter-spacing="4">MUHAMMAD</text>
+  <text x="24" y="156" font-family="Georgia, Times New Roman, serif" font-size="62" fill="#F5F0E8" >Rahim Jamil</text>
+  <rect x="28" y="182" width="424" height="2" fill="url(#accent)"/>
+  <text x="28" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#F5F0E8" >Python data pipelines,</text>
+  <text x="28" y="255" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#F5F0E8" >web scraping, SQL databases,</text>
+  <text x="28" y="287" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#F5F0E8" >and healthcare/genomic</text>
+  <text x="28" y="319" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#F5F0E8" >data applications.</text>
+  <path d="M40 373H216C236 373 236 408 256 408H440" fill="none" stroke="url(#accent)" stroke-width="2"/>
+  <circle cx="40" cy="373" r="6" fill="#142B32" stroke="#8BD5C5" stroke-width="2"/>
+  <circle cx="440" cy="408" r="6" fill="#142B32" stroke="#D6A17B" stroke-width="2"/>
+  <circle r="4" fill="#8BD5C5" opacity="0.85">
+      <animateMotion path="M40 373H216C236 373 236 408 256 408H440" dur="24s" begin="0s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;1" keyPoints="0;1" keySplines="0.42 0 0.58 1"/>
+      <animate attributeName="opacity" values="0;0.85;0.85;0" dur="24s" begin="0s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.12;0.88;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/>
+    </circle>
+  <text x="28" y="438" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" letter-spacing="1">EXTRACT / STRUCTURE / EXPLAIN</text>
+</svg>

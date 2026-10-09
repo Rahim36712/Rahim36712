@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="348" viewBox="0 0 480 348" role="img" aria-labelledby="title desc">
+  <title id="title">Working toolkit</title>
+  <desc id="desc">Python, SQL, JavaScript, and C++. Data extraction, cleaning, validation, and transformation. The animation is decorative and does not represent proficiency or performance.</desc>
+  <defs>
+    <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="480" y2="0">
+      <stop offset="0" stop-color="#8BD5C5">
+
+      </stop>
+      <stop offset="1" stop-color="#D6A17B">
+
+      </stop>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#F5F0E8" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="348" rx="20" fill="#142B32"/>
+  <rect width="480" height="348" rx="20" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="479" height="347" rx="20" fill="none" stroke="#345057"/>
+  <text x="28" y="40" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#8BD5C5" letter-spacing="2">WORKING TOOLKIT</text>
+  <rect x="28" y="68" width="200" height="40" rx="8" fill="#1B363D" stroke="#345057"/>
+  <text x="44" y="95" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#F5F0E8" >Python</text>
+  <rect x="252" y="68" width="200" height="40" rx="8" fill="#1B363D" stroke="#345057"/>
+  <text x="268" y="95" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#F5F0E8" >SQL</text>
+  <rect x="28" y="120" width="200" height="40" rx="8" fill="#1B363D" stroke="#345057"/>
+  <text x="44" y="147" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#F5F0E8" >JavaScript</text>
+  <rect x="252" y="120" width="200" height="40" rx="8" fill="#1B363D" stroke="#345057"/>
+  <text x="268" y="147" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#F5F0E8" >C++</text>
+  <path d="M44 209H436C456 209 456 279 436 279H44" fill="none" stroke="url(#accent)" stroke-width="1.5"/>
+
+  <circle cx="44" cy="209" r="5" fill="#142B32" stroke="#8BD5C5" stroke-width="1.5"/>
+  <text x="28" y="238" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" text-anchor="start" letter-spacing="1">EXTRACT</text>
+  <circle cx="276" cy="209" r="5" fill="#142B32" stroke="#8BD5C5" stroke-width="1.5"/>
+  <text x="260" y="238" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" text-anchor="start" letter-spacing="1">CLEAN</text>
+  <circle cx="276" cy="279" r="5" fill="#142B32" stroke="#8BD5C5" stroke-width="1.5"/>
+  <text x="260" y="308" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" text-anchor="start" letter-spacing="1">VALIDATE</text>
+  <circle cx="44" cy="279" r="5" fill="#142B32" stroke="#8BD5C5" stroke-width="1.5"/>
+  <text x="28" y="308" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" text-anchor="start" letter-spacing="1">TRANSFORM</text>
+</svg>

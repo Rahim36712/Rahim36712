@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">Muhammad Rahim Jamil</title>
+  <desc id="desc">Python data pipelines, web scraping, SQL databases, and healthcare/genomic data applications. Slow moving points illustrate data flow.</desc>
+  <defs>
+    <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="960" y2="0">
+      <stop offset="0" stop-color="#8BD5C5">
+        <animate attributeName="stop-color" values="#8BD5C5;#D6A17B;#8BD5C5" dur="28s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="1" stop-color="#D6A17B">
+        <animate attributeName="stop-color" values="#D6A17B;#8BD5C5;#D6A17B" dur="28s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+      </stop>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#F5F0E8" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="360" rx="20" fill="#142B32"/>
+  <rect width="960" height="360" rx="20" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="959" height="359" rx="20" fill="none" stroke="#345057"/>
+  <text x="40" y="43" font-family="Consolas, Liberation Mono, monospace" font-size="13" fill="#8BD5C5" letter-spacing="2">DATA / FIELDNOTES</text>
+  <text x="40" y="92" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#A9BEBC" letter-spacing="4">MUHAMMAD</text>
+  <text x="36" y="160" font-family="Georgia, Times New Roman, serif" font-size="72" fill="#F5F0E8" >Rahim Jamil</text>
+  <rect x="40" y="187" width="504" height="2" fill="url(#accent)"/>
+  <text x="40" y="229" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#F5F0E8" >Python data pipelines, web scraping,</text>
+  <text x="40" y="261" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#F5F0E8" >SQL databases, and healthcare/genomic</text>
+  <text x="40" y="293" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#F5F0E8" >data applications.</text>
+  <path d="M600 32V328" stroke="#345057" fill="none"/>
+  <text x="638" y="43" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" letter-spacing="2">DATA PIPELINES</text>
+  <path d="M660 100H715C748 100 748 169 782 169H900 M660 180H700C744 180 744 169 782 169 M660 260H715C748 260 748 169 782 169" fill="none" stroke="#345057" stroke-width="1.5"/>
+  <circle r="4" fill="#8BD5C5" opacity="0.85">
+      <animateMotion path="M660 100H715C748 100 748 169 782 169H900" dur="24s" begin="-4s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;1" keyPoints="0;1" keySplines="0.42 0 0.58 1"/>
+      <animate attributeName="opacity" values="0;0.85;0.85;0" dur="24s" begin="-4s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.12;0.88;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/>
+    </circle>
+  <circle r="4" fill="#D6A17B" opacity="0.85">
+      <animateMotion path="M660 180H700C744 180 744 169 782 169H900" dur="28s" begin="-12s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;1" keyPoints="0;1" keySplines="0.42 0 0.58 1"/>
+      <animate attributeName="opacity" values="0;0.85;0.85;0" dur="28s" begin="-12s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.12;0.88;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/>
+    </circle>
+  <circle r="4" fill="#8BD5C5" opacity="0.85">
+      <animateMotion path="M660 260H715C748 260 748 169 782 169H900" dur="32s" begin="-19s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;1" keyPoints="0;1" keySplines="0.42 0 0.58 1"/>
+      <animate attributeName="opacity" values="0;0.85;0.85;0" dur="32s" begin="-19s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.12;0.88;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/>
+    </circle>
+  <rect x="637" y="86" width="64" height="28" rx="7" fill="#142B32" stroke="#345057"/>
+  <rect x="637" y="166" width="80" height="28" rx="7" fill="#142B32" stroke="#345057"/>
+  <rect x="637" y="246" width="96" height="28" rx="7" fill="#142B32" stroke="#345057"/>
+  <text x="651" y="105" font-family="Consolas, Liberation Mono, monospace" font-size="13" fill="#A9BEBC" >WEB</text>
+  <text x="651" y="185" font-family="Consolas, Liberation Mono, monospace" font-size="13" fill="#A9BEBC" >SENSOR</text>
+  <text x="651" y="265" font-family="Consolas, Liberation Mono, monospace" font-size="13" fill="#A9BEBC" >GENOMIC</text>
+  <rect x="798" y="126" width="95" height="88" rx="12" fill="#142B32" stroke="#8BD5C5" stroke-opacity="0.55"/>
+  <path d="M813 150H877 M813 169H854 M813 188H865" stroke="#8BD5C5" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="886" cy="134" r="16" fill="none" stroke="#8BD5C5" opacity="0.3"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="16s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/></circle>
+  <text x="815" y="242" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#D6A17B" >STRUCTURE</text>
+  <text x="638" y="311" font-family="Consolas, Liberation Mono, monospace" font-size="11" fill="#A9BEBC" >EXTRACT / STRUCTURE / EXPLAIN</text>
+</svg>
