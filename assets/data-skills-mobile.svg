@@ -3,42 +3,45 @@
   <desc id="desc">Python, SQL, JavaScript, and C++. Data extraction, cleaning, validation, and transformation. The animation is decorative and does not represent proficiency or performance.</desc>
   <defs>
     <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="480" y2="0">
-      <stop offset="0" stop-color="#8BD5C5">
-        <animate attributeName="stop-color" values="#8BD5C5;#D6A17B;#8BD5C5" dur="28s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+      <stop offset="0" stop-color="#61D8EF">
+        <animate attributeName="stop-color" values="#61D8EF;#FFD582;#61D8EF" dur="28s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
       </stop>
-      <stop offset="1" stop-color="#D6A17B">
-        <animate attributeName="stop-color" values="#D6A17B;#8BD5C5;#D6A17B" dur="28s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+      <stop offset="0.5" stop-color="#C09AFF"/>
+      <stop offset="1" stop-color="#FFD582">
+        <animate attributeName="stop-color" values="#FFD582;#61D8EF;#FFD582" dur="28s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
       </stop>
     </linearGradient>
+    <radialGradient id="glow"><stop stop-color="#C09AFF" stop-opacity="0.2"/><stop offset="1" stop-color="#101E32" stop-opacity="0"/></radialGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#F5F0E8" stroke-opacity="0.035"/>
+      <path d="M32 0H0V32" fill="none" stroke="#FFF5E9" stroke-opacity="0.035"/>
     </pattern>
   </defs>
-  <rect width="480" height="348" rx="20" fill="#142B32"/>
+  <rect width="480" height="348" rx="20" fill="#101E32"/>
+  <ellipse cx="345.59999999999997" cy="139.20000000000002" rx="216.0" ry="261.0" fill="url(#glow)"/>
   <rect width="480" height="348" rx="20" fill="url(#grid)"/>
-  <rect x="0.5" y="0.5" width="479" height="347" rx="20" fill="none" stroke="#345057"/>
-  <text x="28" y="40" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#8BD5C5" letter-spacing="2">WORKING TOOLKIT</text>
-  <rect x="28" y="68" width="200" height="40" rx="8" fill="#1B363D" stroke="#345057"/>
-  <text x="44" y="95" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#F5F0E8" >Python</text>
-  <rect x="252" y="68" width="200" height="40" rx="8" fill="#1B363D" stroke="#345057"/>
-  <text x="268" y="95" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#F5F0E8" >SQL</text>
-  <rect x="28" y="120" width="200" height="40" rx="8" fill="#1B363D" stroke="#345057"/>
-  <text x="44" y="147" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#F5F0E8" >JavaScript</text>
-  <rect x="252" y="120" width="200" height="40" rx="8" fill="#1B363D" stroke="#345057"/>
-  <text x="268" y="147" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#F5F0E8" >C++</text>
+  <rect x="0.5" y="0.5" width="479" height="347" rx="20" fill="none" stroke="#344C6B"/>
+  <text x="28" y="40" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#61D8EF" letter-spacing="2">WORKING TOOLKIT</text>
+  <rect x="28" y="68" width="200" height="40" rx="8" fill="#3B3028" stroke="#FFD582" stroke-opacity="0.4"/>
+  <text x="44" y="95" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#FFD582" >Python</text>
+  <rect x="252" y="68" width="200" height="40" rx="8" fill="#193B4C" stroke="#61D8EF" stroke-opacity="0.4"/>
+  <text x="268" y="95" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#61D8EF" >SQL</text>
+  <rect x="28" y="120" width="200" height="40" rx="8" fill="#30294E" stroke="#C09AFF" stroke-opacity="0.4"/>
+  <text x="44" y="147" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#C09AFF" >JavaScript</text>
+  <rect x="252" y="120" width="200" height="40" rx="8" fill="#3E293C" stroke="#FFA5A9" stroke-opacity="0.4"/>
+  <text x="268" y="147" font-family="Consolas, Liberation Mono, monospace" font-size="18" fill="#FFA5A9" >C++</text>
   <path d="M44 209H436C456 209 456 279 436 279H44" fill="none" stroke="url(#accent)" stroke-width="1.5"/>
-  <circle r="4" fill="#8BD5C5" opacity="0.85">
+  <circle r="4" fill="#61D8EF" opacity="0.85">
       <animateMotion path="M44 209H436C456 209 456 279 436 279H44" dur="30s" begin="0s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;1" keyPoints="0;1" keySplines="0.42 0 0.58 1"/>
       <animate attributeName="opacity" values="0;0.85;0.85;0" dur="30s" begin="0s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.12;0.88;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/>
     </circle>
-  <circle cx="44" cy="209" r="5" fill="#142B32" stroke="#8BD5C5" stroke-width="1.5"/>
-  <text x="28" y="238" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" text-anchor="start" letter-spacing="1">EXTRACT</text>
-  <circle cx="276" cy="209" r="5" fill="#142B32" stroke="#8BD5C5" stroke-width="1.5"/>
-  <text x="260" y="238" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" text-anchor="start" letter-spacing="1">CLEAN</text>
-  <circle cx="276" cy="279" r="5" fill="#142B32" stroke="#8BD5C5" stroke-width="1.5"/>
-  <text x="260" y="308" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" text-anchor="start" letter-spacing="1">VALIDATE</text>
-  <circle cx="44" cy="279" r="5" fill="#142B32" stroke="#8BD5C5" stroke-width="1.5"/>
-  <text x="28" y="308" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#A9BEBC" text-anchor="start" letter-spacing="1">TRANSFORM</text>
+  <circle cx="44" cy="209" r="5" fill="#101E32" stroke="#61D8EF" stroke-width="1.5"/>
+  <text x="28" y="238" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#B4C6DF" text-anchor="start" letter-spacing="1">EXTRACT</text>
+  <circle cx="276" cy="209" r="5" fill="#101E32" stroke="#61D8EF" stroke-width="1.5"/>
+  <text x="260" y="238" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#B4C6DF" text-anchor="start" letter-spacing="1">CLEAN</text>
+  <circle cx="276" cy="279" r="5" fill="#101E32" stroke="#61D8EF" stroke-width="1.5"/>
+  <text x="260" y="308" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#B4C6DF" text-anchor="start" letter-spacing="1">VALIDATE</text>
+  <circle cx="44" cy="279" r="5" fill="#101E32" stroke="#61D8EF" stroke-width="1.5"/>
+  <text x="28" y="308" font-family="Consolas, Liberation Mono, monospace" font-size="12" fill="#B4C6DF" text-anchor="start" letter-spacing="1">TRANSFORM</text>
 </svg>
