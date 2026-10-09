@@ -2,26 +2,28 @@
 
 Biographical content comes only from the supplied Data Engineer Intern CV.
 Portrait geometry comes from the user-supplied avatar's generated line-art study.
-No network access, fonts, scripts, or third-party SVG dependencies are required.
+Rebuilds use the bundled Comfortaa font and fontTools; rendered SVGs do not
+load fonts, scripts, or third-party resources.
 """
 
 from pathlib import Path
 import json
 import re
+from font_outlines import outlined_text, measure, wrap
 
 OUT = Path(__file__).resolve().parents[1] / "assets"
-INK, PAPER, TEAL, COPPER = "#101E32", "#FFF5E9", "#61D8EF", "#FFD582"
-VIOLET, CORAL, MINT = "#C09AFF", "#FFA5A9", "#73E2BE"
-MUTED, LINE = "#B4C6DF", "#344C6B"
-SANS = "Segoe UI, Arial, sans-serif"
-MONO = "Consolas, Liberation Mono, monospace"
-SERIF = "Georgia, Times New Roman, serif"
+INK, PAPER, TEAL, COPPER = "#FFFFFF", "#34402B", "#5B6D32", "#7F9058"
+VIOLET, CORAL, MINT = "#657735", "#697C40", "#74874F"
+MUTED, LINE, SOFT = "#68735E", "#DFE5D2", "#F3F6EB"
+SANS = MONO = SERIF = "Comfortaa"
 EASE = 'calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"'
 
 
 def text(x, y, value, size=16, color=PAPER, family=SANS, **attrs):
-    extra = " ".join(f'{k.replace("_", "-")}="{v}"' for k, v in attrs.items())
-    return f'<text x="{x}" y="{y}" font-family="{family}" font-size="{size}" fill="{color}" {extra}>{value}</text>'
+    weight = int(attrs.pop("font_weight",500))
+    spacing = float(attrs.pop("letter_spacing",0))
+    anchor = attrs.pop("text_anchor","start")
+    return outlined_text(x,y,value,size,color,weight,spacing,anchor,**attrs)
 
 
 def pulse():
@@ -45,7 +47,7 @@ def portrait(x, y, scale):
         start = 3 + 17 * i / max(1,len(data["paths"])-1)
         duration = min(3.5, max(0.8, path["length"] / 145))
         end = start + duration
-        strokes.append(f'''<path d="{path['d']}" pathLength="1" fill="none" stroke="{colors[(i//9)%len(colors)]}" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" stroke-dashoffset="1">
+        strokes.append(f'''<path d="{path['d']}" pathLength="1" fill="none" stroke="{colors[(i//9)%len(colors)]}" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" stroke-dashoffset="1">
           <animate attributeName="stroke-dashoffset" values="1;1;0;0" keyTimes="0;{start/32:.5f};{end/32:.5f};1" dur="32s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/>
         </path>''')
     return f'''<g id="portrait" transform="translate({x} {y}) scale({scale})" opacity="1">
@@ -55,6 +57,7 @@ def portrait(x, y, scale):
 
 
 def typing(x, y, width, size=20):
+    width = round(measure('&gt; draw(profile)',size)+5,2)
     return f'''<g>
       <defs><clipPath id="typing-clip"><rect x="{x}" y="{y-size}" width="{width}" height="{size+10}">
         <animate attributeName="width" values="0;0;{width};{width};0;0" keyTimes="0;0.015;0.22;0.86;0.96;1" dur="32s" repeatCount="indefinite"/>
@@ -81,15 +84,14 @@ def canvas(width, height, title, description, content):
         <animate attributeName="stop-color" values="{COPPER};{TEAL};{COPPER}" dur="28s" repeatCount="indefinite" {EASE}/>
       </stop>
     </linearGradient>
-    <radialGradient id="glow"><stop stop-color="{VIOLET}" stop-opacity="0.2"/><stop offset="1" stop-color="{INK}" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow"><stop stop-color="#D9E2C7" stop-opacity="0.35"/><stop offset="1" stop-color="{INK}" stop-opacity="0"/></radialGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="{PAPER}" stroke-opacity="0.035"/>
     </pattern>
   </defs>
-  <rect width="{width}" height="{height}" rx="20" fill="{INK}"/>
+  <rect width="{width}" height="{height}" rx="28" fill="{INK}"/>
   <ellipse cx="{width*0.72}" cy="{height*0.4}" rx="{width*0.45}" ry="{height*0.75}" fill="url(#glow)"/>
-  <rect width="{width}" height="{height}" rx="20" fill="url(#grid)"/>
-  <rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="20" fill="none" stroke="{LINE}"/>
+  <rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="28" fill="none" stroke="{LINE}"/>
   {content}
 </svg>
 '''
@@ -101,7 +103,7 @@ def header(mobile=False):
         parts = [
             text(28, 42, "DATA / FIELDNOTES", 12, TEAL, MONO, letter_spacing=2),
             text(28, 89, "MUHAMMAD", 18, MUTED, SANS, letter_spacing=4),
-            text(24, 156, "Rahim Jamil", 62, "url(#accent)", SERIF),
+            text(24, 156, "Rahim Jamil", 50, TEAL, SERIF,font_weight=700),
             '<rect x="28" y="182" width="424" height="2" fill="url(#accent)"/>',
             text(28, 223, "Python data pipelines,", 22),
             text(28, 255, "web scraping, SQL databases,", 22),
@@ -116,20 +118,20 @@ def header(mobile=False):
         parts = [
             text(40, 43, "DATA / FIELDNOTES", 13, TEAL, MONO, letter_spacing=2),
             text(40, 92, "MUHAMMAD", 18, MUTED, SANS, letter_spacing=4),
-            text(36, 160, "Rahim Jamil", 72, "url(#accent)", SERIF),
+            text(36, 160, "Rahim Jamil", 58, TEAL, SERIF,font_weight=700),
             '<rect x="40" y="187" width="464" height="2" fill="url(#accent)"/>',
-            text(40, 229, "Python data pipelines, web scraping,", 21),
-            text(40, 261, "SQL databases, and healthcare/genomic", 21),
-            text(40, 293, "data applications.", 21),
-            '<path d="M546 32V440" stroke="#344C6B" fill="none"/>',
+            text(40, 229, "Python data pipelines, web scraping,", 19),
+            text(40, 261, "SQL databases, and healthcare/genomic", 19),
+            text(40, 293, "data applications.", 19),
+            f'<path d="M546 32V440" stroke="{LINE}" fill="none"/>',
             text(582,43,"PORTRAIT / DRAWING DESK",11,MUTED,MONO,letter_spacing=1),
             portrait(564,65,0.5),
             typing(40,360,216,21),
             text(40,425,"EXTRACT / STRUCTURE / EXPLAIN",12,MUTED,MONO,letter_spacing=1),
-            '<rect x="40" y="384" width="464" height="2" fill="#344C6B"/>',
+            f'<rect x="40" y="384" width="464" height="2" fill="{LINE}"/>',
             '<rect x="40" y="384" width="464" height="2" fill="url(#accent)"><animate attributeName="width" values="0;0;464;464;0;0" keyTimes="0;0.06;0.73;0.86;0.96;1" dur="32s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/></rect>',
         ]
-    return canvas(w, h, "Muhammad Rahim Jamil", "Python data pipelines, web scraping, SQL databases, and healthcare/genomic data applications. A prompt types while a colourful line-art interpretation of the supplied avatar draws, holds, fades, and repeats every 32 seconds.", "\n  ".join(parts))
+    return canvas(w, h, "Muhammad Rahim Jamil", "Python data pipelines, web scraping, SQL databases, and healthcare/genomic data applications. A prompt types while an olive line-art interpretation of the supplied avatar draws, holds, fades, and repeats every 32 seconds.", "\n  ".join(parts))
 
 
 def skills(mobile=False):
@@ -141,10 +143,10 @@ def skills(mobile=False):
         xs, ys, bw = [28, 252, 28, 252], [68, 68, 120, 120], 200
     else:
         xs, ys, bw = [40, 264, 488, 712], [66]*4, 208
-    for x, y, label, color, bg in zip(xs,ys,labels,[COPPER,TEAL,VIOLET,CORAL],["#3B3028","#193B4C","#30294E","#3E293C"]):
+    for x, y, label in zip(xs,ys,labels):
         parts += [
-            f'<rect x="{x}" y="{y}" width="{bw}" height="40" rx="8" fill="{bg}" stroke="{color}" stroke-opacity="0.4"/>',
-            text(x+16, y+27, label, 18, color, MONO),
+            f'<rect x="{x}" y="{y}" width="{bw}" height="40" rx="20" fill="{SOFT}" stroke="{LINE}"/>',
+            text(x+16, y+27, label, 17, TEAL, MONO,font_weight=600),
         ]
     if mobile:
         path = "M44 209H436C456 209 456 279 436 279H44"
@@ -165,6 +167,60 @@ def skills(mobile=False):
     return canvas(w, h, "Working toolkit", "Python, SQL, JavaScript, and C++. Data extraction, cleaning, validation, and transformation. The animation is decorative and does not represent proficiency or performance.", "\n  ".join(parts))
 
 
+def icon(kind,x,y):
+    shape = ('<path d="M21 10l9 9-5 5-9-9z M16 15l-4 4 M23 25v4 M15 37h22 M27 25c11 0 12 11 3 12 M16 31h10"/>'
+             if kind=="research" else
+             '<rect x="14" y="14" width="20" height="20" rx="5"/><path d="M19 8v6 M29 8v6 M19 34v6 M29 34v6 M8 19h6 M8 29h6 M34 19h6 M34 29h6"/>')
+    return f'<g transform="translate({x} {y})" data-experience-icon="{kind}"><circle cx="24" cy="24" r="24" fill="{SOFT}"/><g fill="none" stroke="{TEAL}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">{shape}</g></g>'
+
+
+def experience(kind,mobile=False):
+    research = kind=="research"
+    role = "Research Software Engineering Intern" if research else "Embedded Software Intern"
+    employer = "Biomedical Image and Signal Processing Lab (BIOMISA)" if research else "RISETech Pvt. Ltd"
+    meta = "Jun 2026 – Jul 2026 · Rawalpindi, Pakistan" if research else "Jun 2025 – Aug 2025 · Islamabad, Pakistan"
+    bullets = (["4 custom genomic tracks · 10+ React components","Cancer-genomic data: CNVs, SVs, SNVs, and gene annotations","Wakhan Genome Browser · HiGlass · PIXI.js"] if research else
+               ["5+ Python data-processing pipelines","Real-time sensor telemetry · Pandas · NumPy","UART/SPI collection, decoding, and validation"])
+    w = 480 if mobile else 960
+    parts = [icon(kind,28 if mobile else 36,26)]
+    y = 54
+    for line in wrap(role,360 if mobile else 810,21 if mobile else 24,700):
+        parts.append(text(92 if mobile else 106,y,line,21 if mobile else 24,TEAL,font_weight=700))
+        y+=31
+    y+=16 if mobile else 8
+    for line in wrap(employer,424 if mobile else 810,16 if mobile else 18,600):
+        parts.append(text(28 if mobile else 106,y,line,16 if mobile else 18,PAPER,font_weight=600))
+        y+=27
+    y+=4
+    for line in wrap(meta,424 if mobile else 810,14):
+        parts.append(text(28 if mobile else 106,y,line,14,MUTED))
+        y+=25
+    divider_y=y-3
+    parts.append(f'<path d="M{28 if mobile else 106} {divider_y}H{w-32}" fill="none" stroke="{LINE}"/>')
+    y+=24
+    for bullet in bullets:
+        parts.append(f'<circle cx="{34 if mobile else 112}" cy="{y-5}" r="2.5" fill="{TEAL}"/>')
+        for line in wrap(bullet,398 if mobile else 770,15 if mobile else 17):
+            parts.append(text(48 if mobile else 128,y,line,15 if mobile else 17))
+            y+=25 if mobile else 29
+        y+=7
+    return canvas(w,y+14,role,employer+". "+meta+". "+". ".join(bullets),"\n".join(parts))
+
+
+def contact(label):
+    w=round(measure(label,14,600)+44)
+    title=label+" contact link"
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="40" viewBox="0 0 {w} 40" role="img" aria-label="{title}"><title>{title}</title><rect x="0.5" y="0.5" width="{w-1}" height="39" rx="19.5" fill="{TEAL}"/>{text(w/2,25,label,14,"#FFFFFF",font_weight=600,text_anchor="middle")}</svg>\n'
+
+
+def static_svg(animated):
+    # Motion points have no base coordinates; omit them in static artwork.
+    static = re.sub(r'<circle\b[^>]*>\s*<animateMotion\b[^>]*/>(?:\s*<animate\b[^>]*/>)*\s*</circle>', "", animated)
+    static = re.sub(r"<animate(?:Motion|Transform)?\b[^>]*/>", "", static)
+    static = static.replace('stroke-dashoffset="1"','stroke-dashoffset="0"')
+    return "\n".join(line.rstrip() for line in static.splitlines()) + "\n"
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     for name, builder in [("data-header", header), ("data-skills", skills)]:
@@ -172,13 +228,15 @@ def main():
             stem = name + ("-mobile" if mobile else "")
             animated = builder(mobile)
             (OUT / f"{stem}.svg").write_text(animated, encoding="utf-8")
-            # Motion points have no base coordinates; omit them in static artwork.
-            static = re.sub(r'<circle\b[^>]*>\s*<animateMotion\b[^>]*/>(?:\s*<animate\b[^>]*/>)*\s*</circle>', "", animated)
-            static = re.sub(r"<animate(?:Motion|Transform)?\b[^>]*/>", "", static)
-            static = static.replace('stroke-dashoffset="1"','stroke-dashoffset="0"')
-            static = "\n".join(line.rstrip() for line in static.splitlines()) + "\n"
+            static = static_svg(animated)
             (OUT / f"{stem}-static.svg").write_text(static, encoding="utf-8")
-    print("Built 8 SVG assets (desktop/mobile, animated/static).")
+    for kind in ["research","embedded"]:
+        for mobile in [False,True]:
+            suffix="-mobile" if mobile else ""
+            (OUT/f"experience-{kind}{suffix}.svg").write_text(static_svg(experience(kind,mobile)),encoding="utf-8")
+    for label in ["Portfolio","LinkedIn","GitHub","Email"]:
+        (OUT/f"contact-{label.lower()}.svg").write_text(contact(label),encoding="utf-8")
+    print("Built 16 SVG assets with outlined Comfortaa typography.")
 
 
 if __name__ == "__main__":

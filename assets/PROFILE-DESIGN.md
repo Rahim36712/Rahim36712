@@ -8,12 +8,21 @@ it is decorative and is not represented as a photograph of the profile owner.
 
 ## Colour and motion
 
-Midnight sapphire `#101E32`, warm paper `#FFF5E9`, cyan `#61D8EF`, violet
-`#C09AFF`, coral `#FFA5A9`, mint `#73E2BE`, gold `#FFD582`. Gradient typography,
-colourful skill pills and contact badges tie the sections together.
+White `#FFFFFF`, olive `#5B6D32`, dark olive text `#34402B`, soft olive surfaces
+`#F3F6EB`, and pale borders `#DFE5D2`. Cards have 28px corners, skill pills have
+20px corners, and contact links use fully rounded white/olive badges.
+
+All custom artwork uses actual Comfortaa. The unmodified variable font and SIL
+Open Font License live in `assets/fonts/`. `scripts/font_outlines.py` converts
+its glyphs to SVG paths, so rendering does not depend on an installed font or a
+font-loading request. Ordinary Markdown uses GitHub's fixed typography.
+
+The two experience cards use the same typography and generous spacing, with
+one small microscope/chip icon per role. They have separate mobile layouts.
+Original experience text is preserved in the expandable Experience details.
 
 The header replays every 32 seconds: the prompt types, 1,097 portrait centerlines
-draw progressively, the completed drawing holds, and it fades before restarting.
+draw progressively in olive, the completed drawing holds, and it fades before restarting.
 The name and CV summary remain visible throughout. These animations use SVG
 SMIL, not JavaScript. SVGs have no external fonts, images or foreignObject.
 
@@ -36,15 +45,17 @@ commits, so the section is labelled "Contribution trail".
 
 ## Rebuild
 
-Run `python scripts/build_profile_assets.py` for the eight `data-*.svg` assets.
-This uses only the standard library and checked-in `portrait-paths.json`.
+Run `python scripts/build_profile_assets.py` for all sixteen SVG assets: eight
+header/toolkit variants, four experience cards, and four contact badges.
+This uses fontTools, the bundled font, and checked-in `portrait-paths.json`.
 If replacing the raster master, run `python scripts/trace_portrait.py` first;
 that optional trace step requires OpenCV, NumPy and scikit-image. It traces
 centerlines without changing the raster source.
 
-Host the eight SVGs on `main` in `Rahim36712/Rahim36712`. The README contains
-full raw URLs. Snake output is hosted on the `output` branch. The only visual
-service used at read time is Shields.io for contact badges.
+Host the sixteen generated SVGs on `main` in `Rahim36712/Rahim36712`. The README
+contains full raw URLs. Snake output is hosted on the `output` branch. Both
+snake themes use a rounded white surface and the same olive palette. All
+displayed images are repository-hosted; there are no badge/font services to load.
 
 ## Ideas researched
 

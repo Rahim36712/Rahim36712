@@ -2,10 +2,10 @@
 
 <p align="center">
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-header-mobile-static.svg?v=2" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-header-static.svg?v=2" />
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-header-mobile.svg?v=2" />
-  <img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-header.svg?v=2" width="100%" alt="Muhammad Rahim Jamil — Python data pipelines, web scraping, SQL databases, and healthcare/genomic data applications. A prompt repeatedly types and draws a colourful line-art interpretation of my profile avatar." />
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-header-mobile-static.svg?v=3" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-header-static.svg?v=3" />
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-header-mobile.svg?v=3" />
+  <img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-header.svg?v=3" width="100%" alt="Muhammad Rahim Jamil — Python data pipelines, web scraping, SQL databases, and healthcare/genomic data applications. A prompt repeatedly types and draws an olive line-art interpretation of my profile avatar." />
 </picture>
 </p>
 
@@ -29,6 +29,23 @@
 
 ## Experience
 
+<p>
+<picture>
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/experience-research-mobile.svg?v=3" />
+  <img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/experience-research.svg?v=3" width="100%" alt="Research Software Engineering Intern at BIOMISA, Jun–Jul 2026, Rawalpindi. 4 custom genomic tracks and 10+ React components for the Wakhan Genome Browser; cancer-genomic data; HiGlass and PIXI.js." />
+</picture>
+</p>
+
+<p>
+<picture>
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/experience-embedded-mobile.svg?v=3" />
+  <img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/experience-embedded.svg?v=3" width="100%" alt="Embedded Software Intern at RISETech Pvt. Ltd, Jun–Aug 2025, Islamabad. 5+ Python data-processing pipelines with Pandas and NumPy; real-time sensor telemetry; UART/SPI collection, decoding and validation." />
+</picture>
+</p>
+
+<details>
+  <summary><strong>Experience details</strong></summary>
+
 <sub>01 / GENOMIC DATA &amp; RESEARCH SOFTWARE</sub>
 
 ### Research Software Engineering Intern
@@ -48,6 +65,8 @@
 - Developed **5+ Python data-processing pipelines** using **NumPy** and **Pandas** for real-time sensor telemetry.
 - Cleaned, transformed, and structured sensor data for downstream visualization and analysis.
 - Automated **UART/SPI data collection**, packet decoding, validation, and error handling for testing workflows.
+
+</details>
 
 ---
 
@@ -83,10 +102,10 @@ Processes **glucose, HbA1c, exercise, sleep, and diet inputs** into an explainab
 
 <p>
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-skills-mobile-static.svg?v=2" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-skills-static.svg?v=2" />
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-skills-mobile.svg?v=2" />
-  <img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-skills.svg?v=2" width="100%" alt="Python, SQL, JavaScript, and C++ — data extraction, cleaning, validation, and transformation. Decorative motion shows the processing sequence, not proficiency levels." />
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-skills-mobile-static.svg?v=3" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-skills-static.svg?v=3" />
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-skills-mobile.svg?v=3" />
+  <img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/data-skills.svg?v=3" width="100%" alt="Python, SQL, JavaScript, and C++ — data extraction, cleaning, validation, and transformation. Decorative motion shows the processing sequence, not proficiency levels." />
 </picture>
 </p>
 
@@ -125,10 +144,10 @@ A snake moving through my GitHub contribution calendar.
 
 <p align="center">
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/output/github-contribution-grid-snake-dark-static.svg?v=2" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/output/github-contribution-grid-snake-static.svg?v=2" />
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/output/github-contribution-grid-snake-dark.svg?v=2" />
-  <img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/output/github-contribution-grid-snake.svg" width="100%" alt="Animated snake following Rahim36712's GitHub contribution calendar." />
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/output/github-contribution-grid-snake-dark-static.svg?v=3" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/output/github-contribution-grid-snake-static.svg?v=3" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rahim36712/Rahim36712/output/github-contribution-grid-snake-dark.svg?v=3" />
+  <img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/output/github-contribution-grid-snake.svg?v=3" width="100%" alt="Animated snake following Rahim36712's GitHub contribution calendar." />
 </picture>
 </p>
 
@@ -137,10 +156,10 @@ A snake moving through my GitHub contribution calendar.
 ## Contact
 
 <p>
-  <a href="https://finalportfolio-chi-bay.vercel.app/" title="Visit my portfolio"><img src="https://img.shields.io/badge/Portfolio-6F4C9B?style=for-the-badge&amp;labelColor=6F4C9B&amp;color=6F4C9B" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/muhammad-rahim-jamil-59218534a" title="Connect on LinkedIn"><img src="https://img.shields.io/badge/LinkedIn-126278?style=for-the-badge&amp;labelColor=126278&amp;color=126278" alt="LinkedIn" /></a>
-  <a href="https://github.com/Rahim36712" title="Browse my GitHub"><img src="https://img.shields.io/badge/GitHub-9C405E?style=for-the-badge&amp;labelColor=9C405E&amp;color=9C405E" alt="GitHub" /></a>
-  <a href="mailto:mjamil.ce45ceme@student.nust.edu.pk" title="Email Muhammad Rahim Jamil"><img src="https://img.shields.io/badge/Email-236951?style=for-the-badge&amp;labelColor=236951&amp;color=236951" alt="Email" /></a>
+  <a href="https://finalportfolio-chi-bay.vercel.app/" title="Visit my portfolio"><img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/contact-portfolio.svg?v=3" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/muhammad-rahim-jamil-59218534a" title="Connect on LinkedIn"><img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/contact-linkedin.svg?v=3" alt="LinkedIn" /></a>
+  <a href="https://github.com/Rahim36712" title="Browse my GitHub"><img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/contact-github.svg?v=3" alt="GitHub" /></a>
+  <a href="mailto:mjamil.ce45ceme@student.nust.edu.pk" title="Email Muhammad Rahim Jamil"><img src="https://raw.githubusercontent.com/Rahim36712/Rahim36712/main/assets/contact-email.svg?v=3" alt="Email" /></a>
 </p>
 
 **Email:** [mjamil.ce45ceme@student.nust.edu.pk](mailto:mjamil.ce45ceme@student.nust.edu.pk)<br />**Phone:** +92 309 1751719

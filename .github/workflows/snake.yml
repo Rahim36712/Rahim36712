@@ -34,8 +34,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#9C405E&color_dots=#e7eaf2,#bce7ef,#a8b7ed,#bd92da,#925ba8
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#FFA5A9&color_dots=#19263b,#21495e,#397489,#7b6baa,#C09AFF
+            dist/github-contribution-grid-snake.svg?color_snake=#5B6D32&color_dots=#F1F4E9,#D8E1C3,#B4C48E,#8CA25B,#657735
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#5B6D32&color_dots=#F1F4E9,#D8E1C3,#B4C48E,#8CA25B,#657735
 
       - name: Slow the loop and create reduced-motion images
         run: python source/scripts/style_snake.py --directory dist
