@@ -11,14 +11,26 @@
 
 <p align="center">
   <strong>Final-year Computer Engineering student at NUST</strong><br />
-  <sub>Islamabad, Pakistan · Python data pipelines · Web scraping · SQL &amp; relational databases</sub>
+  <sub>Islamabad, Pakistan · Python data pipelines · Web scraping · MLOps &amp; Healthcare AI</sub>
 </p>
 
-> A strong interest in scalable data engineering and modern scraping frameworks.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/n8n-FF6F61?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
+</p>
+
+> A strong interest in scalable data engineering, machine learning pipelines, and healthcare informatics.
 
 <p align="center">
   <a href="#experience">Experience</a> &nbsp; / &nbsp;
-  <a href="#selected-work">Selected work</a> &nbsp; / &nbsp;
+  <a href="#featured-projects">Featured Projects</a> &nbsp; / &nbsp;
   <a href="#working-toolkit">Toolkit</a> &nbsp; / &nbsp;
   <a href="#education">Education</a> &nbsp; / &nbsp;
   <a href="#contribution-trail">Activity</a> &nbsp; / &nbsp;
@@ -70,31 +82,18 @@
 
 ---
 
-## Selected work
+## Featured Projects
 
-<sub>01 / EXTRACT</sub>
-
-### MITACS Project Scraper
-
-Browser-driven extraction from the dynamic MITACS project platform, with **multi-keyword parallel search**, pagination handling, and configurable crawl depth. Extracts project IDs, titles, descriptions, start dates, and languages; adds filters; and exports structured datasets to **CSV/Markdown through Flask APIs**.
-
-`Python` `Playwright` `Flask` `REST APIs` `CSV/Markdown`
-
-<sub>02 / STRUCTURE</sub>
-
-### Digital Afterlife Manager
-
-A relational database application with a **normalized schema of 10+ tables**, views, triggers, indexes, and foreign-key constraints in **Microsoft SQL Server** and **MySQL**. Includes complex SQL queries and data retrieval improvements through schema design and indexing for dashboard analytics.
-
-`SQL` `Microsoft SQL Server` `MySQL` `Relational databases`
-
-<sub>03 / EXPLAIN</sub>
-
-### DiabetX AI · Healthcare Digital Twin
-
-Processes **glucose, HbA1c, exercise, sleep, and diet inputs** into an explainable health score. Integrates health inputs with interactive visualization and AI coaching, demonstrating healthcare-oriented data workflows.
-
-`Healthcare data` `Interactive visualization` `AI coaching`
+| Project | Highlights | Tech Stack |
+| :--- | :--- | :--- |
+| **[MLOps Model Drift & Retraining Platform](https://github.com/Rahim36712/ML-Model-Drift-Monitoring-Automated-Retraining-Platform)** | Production-grade continuous learning platform with **Evidently AI drift detection**, automated retraining triggers, model registry, and FastAPI inference pipeline. | `Python` `Evidently` `FastAPI` `Docker` `MLflow` |
+| **[3D Brain Tumor MRI Segmentation](https://github.com/Rahim36712/Brain-Tumor-Segmentation-3D)** | Deep learning segmentation pipeline using **BraTS 2020 3D multimodal MRI** data (FLAIR, T1, T1ce, T2) with a 3D U-Net architecture and volumetric evaluation. | `PyTorch` `3D U-Net` `Nibabel` `Medical Imaging` |
+| **[DiabetX — Digital Twin Platform](https://github.com/Rahim36712/diabetx)** | Browser-first metabolic digital twin with a deterministic mathematical scoring engine, interactive **Three.js WebGL holographic body model**, and MCP Connected Care workspace. | `Next.js 16` `React 19` `TypeScript` `Three.js` `Gemini` |
+| **[AuraDisc Pro — Song Downloader](https://github.com/Rahim36712/N8N_SONG-_DOWNLOADING_AUTOMATION)** | High-fidelity local audio downloader and retro player featuring **Option A Hybrid Matcher**, 3D Coverflow deck, dual-language Urdu karaoke lyrics, and n8n batch automation. | `Python` `Flask` `yt-dlp` `Three.js` `n8n` `SSE` |
+| **[Agency Automater](https://github.com/Rahim36712/agency-automater)** | Local B2B acquisition & research assistant featuring anti-SSRF web crawlers, **3-tier Gemini fallback**, deterministic evidence scoring, and draft-only Gmail workflows. | `Node.js 24` `n8n 2.42` `Google APIs` `Gemini AI` |
+| **[Smart Bookmark Organizer](https://github.com/Rahim36712/smart-bookmark-organizer)** | Privacy-first Manifest V3 extension with local multi-signal NLP categorization, clutter auto-splitter, 6-tier Gemini failover, and atomic 1-click snapshot restoration. | `JavaScript ES6` `Manifest V3` `Chrome APIs` `CSS 3D` |
+| **[MITACS Projects Scraper](https://github.com/Rahim36712/mitacs_projects_scraper)** | Resilient Playwright scraper for MITACS Globalink research listings with multi-keyword concurrency, dynamic pagination, and clean CSV/Markdown export. | `Python` `Playwright` `Flask` `BeautifulSoup` |
+| **[ViScanner Improved](https://github.com/Rahim36712/viscanner-improved)** | Cancer genomic visualization and structural variant analysis tool for complex genomic datasets, developed during BIOMISA research engineering internship. | `React` `HiGlass` `PIXI.js` `Genomic Data` |
 
 ---
 
